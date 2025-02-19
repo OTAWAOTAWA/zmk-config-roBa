@@ -54,13 +54,6 @@
     };
 
     behaviors {
-        lt_to_layer_0: lt_to_layer_0 {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_TAP_TO_0";
-            bindings = <&mo>, <&to_layer_0>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
                                                         //  behaviors に追加
                                                         // 新しいスクロール動作の追加
                                                                 scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
@@ -70,6 +63,14 @@
                                                                     // 追加: スクロールのタップ時間を設定 (20ms)
                                                                     tap-ms = <20>;
                                                                 };
+        lt_to_layer_0: lt_to_layer_0 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LAYER_TAP_TO_0";
+            bindings = <&mo>, <&to_layer_0>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+
 
         };
     };
