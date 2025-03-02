@@ -83,16 +83,18 @@
 &kp LEFT_SHIFT  &kp LEFT_WIN  &kp LCTRL  &mt LEFT_ALT LANG2  &lt 1 SPACE  &lt_to_layer_0 3 LANG1      &kp BACKSPACE  &lt 2 ENTER                                 &kp RIGHT_SHIFT
             >;
 
-            sensor-bindings = <&inc_dec_kp DOWN UP>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         kigou {
             bindings = <
-&kp AT_SIGN  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                              &kp CARET    &kp EXCLAMATION       &kp PIPE   &kp GRAVE  &none
-&kp HASH     &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans          &kp ESCAPE  &kp PERCENT  &kp AMPERSAND         &kp TILDE  &none      &kp UNDERSCORE
-&kp DOLLAR   &kp COLON         &kp SEMI           &kp LESS_THAN         &kp GREATER_THAN       &kp DELETE      &kp TAB     &kp SLASH    &kp NON_US_BACKSLASH  &none      &none      &kp ASTERISK
-&trans       &trans            &trans             &trans                &trans                 &trans          &trans      &trans                                                   &kp RIGHT_SHIFT
+&kp AT_SIGN  &kp LEFT_BRACE  &kp RIGHT_BRACE    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                              &kp QUESTION  &kp EXCLAMATION    &kp RIGHT_BRACE  &kp GRAVE  &none
+&kp HASH     &kp SQT         &kp DOUBLE_QUOTES  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans          &kp ESCAPE  &kp PERCENT   &kp AMPERSAND      &kp TILDE        &none      &kp UNDERSCORE
+&kp DOLLAR   &kp COLON       &kp SEMICOLON      &kp LESS_THAN         &kp GREATER_THAN       &kp DELETE      &kp TAB     &kp SLASH     &kp RIGHT_BRACKET  &none            &none      &kp ASTERISK
+&trans       &trans          &trans             &trans                &trans                 &trans          &trans      &trans                                                       &kp RIGHT_SHIFT
             >;
+
+            sensor-bindings = <&scroll_up_down>;
         };
 
         yajirusi {
@@ -102,6 +104,8 @@
 &none       &none   &none   &none   &none   &kp DELETE      &kp TAB  &none            &mkp MB1      &none     &mkp MB2       &none
 &trans      &trans  &trans  &trans  &trans  &trans          &trans   &trans                                                  &kp RIGHT_SHIFT
             >;
+
+            sensor-bindings = <&scroll_up_down>;
         };
 
         SCROLL {
@@ -111,6 +115,8 @@
 &trans  &kp F4   &kp F3   &kp F2   &kp F1  &trans      &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0  &kp PERIOD
 &trans  &trans   &trans   &trans   &trans  &trans      &trans  &trans                                                  &kp EQUAL
             >;
+
+            sensor-bindings = <&scroll_up_down>;
         };
 
         MOUSE {
