@@ -59,15 +59,16 @@
             bindings = <&mo>, <&to_layer_0>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <400>;
         };
 
-        scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
+        scroll_up_down: be_sensor_rotate_mouse_wh_up_dn {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
 
             tap-ms = <20>;
+            label = "m_u_d";
         };
     };
 
@@ -82,7 +83,7 @@
 &kp LEFT_SHIFT  &kp LEFT_WIN  &kp LCTRL  &mt LEFT_ALT LANG2  &lt 1 SPACE  &lt_to_layer_0 3 LANG1      &kp BACKSPACE  &lt 2 ENTER                                 &kp RIGHT_SHIFT
             >;
 
-            sensor-bindings = <&inc_dec_kp DOWN UP>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         kigou {
