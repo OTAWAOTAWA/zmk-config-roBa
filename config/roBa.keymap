@@ -99,7 +99,7 @@
             bindings = <
 &kp AT_SIGN  &kp LEFT_BRACE  &kp RIGHT_BRACE    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                              &kp CARET    &kp EXCLAMATION  &kp PIPE   &kp GRAVE  &none
 &kp HASH     &kp SQT         &kp DOUBLE_QUOTES  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans          &kp ESCAPE  &kp PERCENT  &kp AMPERSAND    &kp TILDE  &none      &kp UNDERSCORE
-&kp DOLLAR   &kp COLON       &kp SEMICOLON      &kp LESS_THAN         &kp GREATER_THAN       &kp DELETE      &kp TAB     &kp SLASH    &kp NUBS         &none      &none      &kp ASTERISK
+&kp DOLLAR   &kp COLON       &kp SEMICOLON      &kp LESS_THAN         &kp GREATER_THAN       &kp DELETE      &kp TAB     &kp SLASH    &kp BACKSLASH    &none      &none      &kp ASTERISK
 &trans       &trans          &trans             &trans                &trans                 &trans          &trans      &trans                                              &kp RIGHT_SHIFT
             >;
 
