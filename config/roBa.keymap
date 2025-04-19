@@ -92,7 +92,7 @@
 &kp LEFT_SHIFT  &kp LEFT_WIN  &kp LCTRL  &mt LEFT_ALT LANG2  &lt 1 SPACE  &lt_to_layer_0 3 LANG1      &kp BACKSPACE  &lt 2 ENTER                                 &kp RIGHT_SHIFT
             >;
 
-            sensor-bindings = <&scroll>;
+            sensor-bindings = <&inc_dec_kp DOWN UP>;
         };
 
         kigou {
@@ -103,7 +103,7 @@
 &trans       &trans          &trans             &trans                &trans                 &trans          &trans      &trans                                              &kp RIGHT_SHIFT
             >;
 
-            sensor-bindings = <&scroll>;
+            sensor-bindings = <&inc_dec_kp K_VOL_DN2 LS(K_VOLUME_UP)>;
         };
 
         yajirusi {
