@@ -107,7 +107,7 @@
 &trans  &trans   &trans   &trans   &trans  &trans      &trans  &trans                                                  &kp EQUAL
             >;
 
-            sensor-bindings = <&inc_dec_kp LEFT_ARROW RIGHT_ARROW>;
+            sensor-bindings = <&inc_dec_kp LEFT RIGHT>;
         };
 
         MOUSE {
