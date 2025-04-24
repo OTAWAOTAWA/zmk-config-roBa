@@ -86,10 +86,10 @@
 
         default_layer {
             bindings = <
-&kp Q           &kp W         &kp E      &kp R               &kp T                                                   &kp Y        &kp U    &lt 3 I      &kp O    &kp P
-&kp A           &kp S         &kp D      &kp F               &kp G        &bt BT_CLR                  &kp ESCAPE     &kp H        &kp J    &kp K        &kp L    &kp MINUS
-&kp Z           &kp X         &kp C      &kp V               &kp B        &kp DELETE                  &kp TAB        &kp N        &lt 5 M  &lt 2 COMMA  &kp DOT  &kp QUESTION
-&kp LEFT_SHIFT  &kp LEFT_WIN  &kp LCTRL  &mt LEFT_ALT LANG2  &lt 1 SPACE  &lt_to_layer_0 3 LANG1      &kp BACKSPACE  &lt 2 ENTER                                 &kp RIGHT_SHIFT
+&kp Q             &kp W         &kp E           &kp R               &kp T                                                   &kp Y        &kp U    &lt 3 I      &kp O    &kp P
+&kp A             &kp S         &kp D           &kp F               &kp G        &bt BT_CLR                  &kp ESCAPE     &kp H        &kp J    &kp K        &kp L    &kp MINUS
+&kp Z             &kp X         &kp C           &kp V               &kp B        &kp DELETE                  &kp TAB        &kp N        &lt 5 M  &lt 2 COMMA  &kp DOT  &kp QUESTION
+&kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_SHIFT  &mt LEFT_ALT LANG2  &lt 1 SPACE  &lt_to_layer_0 3 LANG1      &kp BACKSPACE  &lt 2 ENTER                                 &kp RIGHT_SHIFT
             >;
 
             sensor-bindings = <&inc_dec_kp DOWN_ARROW UP_ARROW>;
@@ -97,10 +97,10 @@
 
         kigou {
             bindings = <
-&kp AT      &kp LEFT_BRACE  &kp RIGHT_BRACE    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                              &kp CARET    &kp EXCLAMATION  &kp PIPE   &kp GRAVE  &none
-&kp HASH    &kp SQT         &kp DOUBLE_QUOTES  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans          &kp ESCAPE  &kp PERCENT  &kp AMPERSAND    &kp TILDE  &none      &kp UNDERSCORE
-&kp DOLLAR  &kp COLON       &kp SEMICOLON      &kp LESS_THAN         &kp GREATER_THAN       &kp DELETE      &kp TAB     &kp SLASH    &kp BACKSLASH    &none      &none      &kp ASTERISK
-&trans      &trans          &trans             &trans                &trans                 &trans          &trans      &trans                                              &kp RIGHT_SHIFT
+&kp LS(NUMBER_2)  &kp LEFT_BRACE  &kp RIGHT_BRACE    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                              &kp CARET    &kp EXCLAMATION  &kp PIPE   &kp GRAVE  &none
+&kp HASH          &kp SQT         &kp DOUBLE_QUOTES  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans          &kp ESCAPE  &kp PERCENT  &kp AMPERSAND    &kp TILDE  &none      &kp UNDERSCORE
+&kp DOLLAR        &kp COLON       &kp SEMICOLON      &kp LESS_THAN         &kp GREATER_THAN       &kp DELETE      &kp TAB     &kp SLASH    &kp BACKSLASH    &none      &none      &kp ASTERISK
+&trans            &trans          &trans             &trans                &trans                 &trans          &trans      &trans                                              &kp RIGHT_SHIFT
             >;
 
             sensor-bindings = <&inc_dec_kp K_VOL_DN2 LS(K_VOLUME_UP)>;
