@@ -9,6 +9,7 @@
 #define NUM 6
 
 // OS設定を日本語キーボードのまま使用するための変換定義
+
 #define JP_DQUOTE       AT                // "
 #define JP_AMPERSAND    CARET             // &
 #define JP_QUOTE        AMPERSAND         // '
@@ -75,6 +76,20 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
+
+        mail: mail {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp T &kp S &kp U &kp T &kp O &kp M &kp U &kp UNDER &kp O &kp O &kp T &kp A &kp W &kp A &kp AT &kp T &kp O &kp M &kp O &kp E &kp G &kp A &kp W &kp A &kp DOT &kp C &kp O &kp DOT &kp J &kp P>;
+            label = "MAIL";
+        };
+
+        pwd: pwd {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LS(I) &kp N &kp T &kp E &kp L &kp AT>;
+            label = "PWD";
+        };
     };
 
     behaviors {
@@ -122,10 +137,10 @@
 
         kigou {
             bindings = <
-&kp JP_AT  &kp RIGHT_BRACE  &kp PIPE    &kp JP_LPAREN  &kp LEFT_PARENTHESIS                              &kp EQUAL    &kp EXCLAMATION  &kp LS(0x89)   &kp LEFT_BRACE  &none
-&kp HASH     &kp AMPERSAND         &kp AT  &kp RIGHT_BRACKET      &kp BACKSLASH      &trans          &kp ESCAPE  &kp PERCENT  &kp CARET    &kp PLUS  &none      &kp LS(0x87)
-&kp DOLLAR   &kp SINGLE_QUOTE       &kp SEMICOLON      &kp LESS_THAN         &kp GREATER_THAN       &kp DELETE      &kp TAB     &kp SLASH    &kp 0x89    &none      &none      &kp DOUBLE_QUOTES
-&trans       &trans          &trans             &trans                &trans                 &trans          &trans      &trans                                              &kp RIGHT_SHIFT
+&kp JP_AT   &kp RIGHT_BRACE   &kp PIPE       &kp JP_LPAREN      &kp LEFT_PARENTHESIS                              &kp EQUAL    &kp EXCLAMATION  &kp LS(0x89)  &kp LEFT_BRACE  &none
+&kp HASH    &kp AMPERSAND     &kp AT         &kp RIGHT_BRACKET  &kp BACKSLASH         &trans          &kp ESCAPE  &kp PERCENT  &kp CARET        &kp PLUS      &none           &kp LS(0x87)
+&kp DOLLAR  &kp SINGLE_QUOTE  &kp SEMICOLON  &kp LESS_THAN      &kp GREATER_THAN      &kp DELETE      &kp TAB     &kp SLASH    &kp 0x89         &none         &none           &kp DOUBLE_QUOTES
+&trans      &trans            &trans         &trans             &trans                &trans          &trans      &trans                                                      &kp RIGHT_SHIFT
             >;
 
             sensor-bindings = <&inc_dec_kp K_VOL_DN2 LS(K_VOLUME_UP)>;
@@ -133,10 +148,10 @@
 
         yajirusi {
             bindings = <
-&kp ESCAPE  &none   &none   &none   &none                            &kp PRINTSCREEN  &kp LA(LEFT)  &kp UP    &kp LA(RIGHT)  &kp DELETE
-&kp TAB     &none   &none   &none   &none   &none           &kp ESC  &none            &kp LEFT      &kp DOWN  &kp RIGHT      &none
-&none       &none   &none   &none   &none   &kp DELETE      &kp TAB  &none            &mkp MB1      &none     &mkp MB2       &none
-&trans      &trans  &trans  &trans  &trans  &trans          &trans   &trans                                                  &kp RIGHT_SHIFT
+&kp ESCAPE  &none   &none   &none   &mail                               &kp PRINTSCREEN  &kp LA(LEFT)  &kp UP    &kp LA(RIGHT)  &kp DELETE
+&kp TAB     &none   &none   &none   &pwd       &none           &kp ESC  &none            &kp LEFT      &kp DOWN  &kp RIGHT      &none
+&none       &none   &none   &none   &kp LG(L)  &kp DELETE      &kp TAB  &none            &mkp MB1      &none     &mkp MB2       &none
+&trans      &trans  &trans  &trans  &trans     &trans          &trans   &trans                                                  &kp RIGHT_SHIFT
             >;
 
             sensor-bindings = <&scroll>;
