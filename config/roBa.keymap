@@ -87,7 +87,7 @@
         pwd: pwd {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp LS(I) &kp N &kp T &kp E &kp L &kp AT>;
+            bindings = <&none &kp LS(I) &kp N &kp T &kp E &kp L &kp JP_DQUOTE>;
             label = "PWD";
         };
     };
@@ -159,10 +159,10 @@
 
         SCROLL {
             bindings = <
-&trans  &kp F12  &kp F11  &kp F10  &kp F9                      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS      &kp MINUS
-&trans  &kp F8   &kp F7   &kp F6   &kp F5  &trans      &trans  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp ASTERISK  &kp SLASH
+&trans  &kp F12  &kp F11  &kp F10  &kp F9                      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp JP_PLUS      &kp MINUS
+&trans  &kp F8   &kp F7   &kp F6   &kp F5  &trans      &trans  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp JP_ASTERISK  &kp SLASH
 &trans  &kp F4   &kp F3   &kp F2   &kp F1  &trans      &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0  &kp PERIOD
-&trans  &trans   &trans   &trans   &trans  &trans      &trans  &trans                                                  &kp EQUAL
+&trans  &trans   &trans   &trans   &trans  &trans      &trans  &trans                                                  &kp JP_EQUAL
             >;
 
             sensor-bindings = <&inc_dec_kp LEFT_ARROW RIGHT_ARROW>;
