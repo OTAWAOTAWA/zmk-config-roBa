@@ -87,7 +87,7 @@
         pwd: pwd {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp LS(I) &kp N &kp T &kp E &kp L &kp JP_DQUOTE>;
+            bindings = <&none &kp LS(I) &kp N &kp T &kp E &kp L &kp JP_AT>;
             label = "PWD";
         };
     };
