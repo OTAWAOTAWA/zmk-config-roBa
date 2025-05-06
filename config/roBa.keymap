@@ -127,7 +127,7 @@
         default_layer {
             bindings = <
 &kp Q             &kp W         &kp E           &kp R               &kp T                                                   &kp Y        &kp U    &lt 3 I      &kp O    &kp P
-&kp A             &kp S         &kp D           &kp F               &kp G        &bt BT_CLR                  &kp ESCAPE     &kp H        &kp J    &kp K        &kp L    &kp MINUS
+&kp A             &kp S         &kp D           &kp F               &kp G        &none                       &kp ESCAPE     &kp H        &kp J    &kp K        &kp L    &kp MINUS
 &kp Z             &kp X         &kp C           &kp V               &kp B        &kp DELETE                  &kp TAB        &kp N        &lt 5 M  &lt 2 COMMA  &kp DOT  &kp QUESTION
 &kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_SHIFT  &mt LEFT_ALT LANG2  &lt 1 SPACE  &lt_to_layer_0 3 LANG1      &kp BACKSPACE  &lt 2 ENTER                                 &kp RIGHT_SHIFT
             >;
@@ -161,8 +161,8 @@
             bindings = <
 &trans  &kp F12  &kp F11  &kp F10  &kp F9                      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp JP_PLUS      &kp MINUS
 &trans  &kp F8   &kp F7   &kp F6   &kp F5  &trans      &trans  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp JP_ASTERISK  &kp SLASH
-&trans  &kp F4   &kp F3   &kp F2   &kp F1  &trans      &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0  &kp PERIOD
-&trans  &trans   &trans   &trans   &trans  &trans      &trans  &trans                                                  &kp JP_EQUAL
+&trans  &kp F4   &kp F3   &kp F2   &kp F1  &trans      &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0     &kp PERIOD
+&trans  &trans   &trans   &trans   &trans  &trans      &trans  &trans                                                     &kp JP_EQUAL
             >;
 
             sensor-bindings = <&inc_dec_kp LEFT_ARROW RIGHT_ARROW>;
