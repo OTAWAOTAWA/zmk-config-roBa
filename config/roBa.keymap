@@ -171,7 +171,7 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            sensor-bindings = <&scroll_up_down>, <&scroll_up_down>;
+            sensor-bindings = <&scroll_down_up>, <&scroll_down_up>;
             bindings = <
 &kp Q             &kp W         &kp E           &kp R               &kp T                                                   &kp Y        &kp U    &lt 3 I      &kp O    &kp P
 &kp A             &kp S         &kp D           &kp F               &kp G        &none                       &kp ESCAPE     &kp H        &kp J    &kp K        &kp L    &kp MINUS
@@ -181,14 +181,13 @@
         };
 
         kigou {
+            sensor-bindings = <&scroll_left_right>, <&scroll_left_right>;
             bindings = <
 &kp JP_AT   &kp RIGHT_BRACE   &kp PIPE       &kp JP_LPAREN      &kp LEFT_PARENTHESIS                              &kp EQUAL    &kp EXCLAMATION  &kp LS(0x89)  &kp LEFT_BRACE  &none
 &kp HASH    &kp AMPERSAND     &kp AT         &kp RIGHT_BRACKET  &kp BACKSLASH         &trans          &kp ESCAPE  &kp PERCENT  &kp CARET        &kp PLUS      &none           &kp LS(0x87)
 &kp DOLLAR  &kp SINGLE_QUOTE  &kp SEMICOLON  &kp LESS_THAN      &kp GREATER_THAN      &kp DELETE      &kp TAB     &kp SLASH    &kp 0x89         &none         &none           &kp DOUBLE_QUOTES
 &trans      &trans            &trans         &trans             &trans                &trans          &trans      &trans                                                      &kp RIGHT_SHIFT
             >;
-
-            sensor-bindings = <&inc_dec_kp K_VOL_DN2 LS(K_VOLUME_UP)>;
         };
 
         yajirusi {
