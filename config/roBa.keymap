@@ -3,7 +3,9 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
-#define ZMK_MOUSE_POINTING_SCRL_VAL 100
+// Mouse Scroll Value
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 100
+
 #define MOUSE 4
 #define SCROLL 5
 #define NUM 6
@@ -119,20 +121,63 @@
 
             tap-ms = <20>;
         };
+
+        // Encoder to Mouse Scroll
+
+        scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+
+            tap-ms = <20>;
+        };
+
+        scroll_down_up: behavior_sensor_rotate_mouse_wheel_down_up {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+
+            tap-ms = <20>;
+        };
+
+        scroll_left_right: behavior_sensor_rotate_mouse_wheel_left_right {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_LEFT>, <&msc SCRL_RIGHT>;
+
+            tap-ms = <20>;
+        };
+
+        scroll_right_left: behavior_sensor_rotate_mouse_wheel_right_left {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_RIGHT>, <&msc SCRL_LEFT>;
+
+            tap-ms = <20>;
+        };
+
+        volume_up_down: behavior_sensor_rotate_volume_up_down {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&kp C_VOLUME_UP>, <&kp C_VOLUME_DOWN>;
+
+            tap-ms = <20>;
+        };
+
+
     };
 
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
+            sensor-bindings = <&scroll_up_down>, <&scroll_up_down>;
             bindings = <
 &kp Q             &kp W         &kp E           &kp R               &kp T                                                   &kp Y        &kp U    &lt 3 I      &kp O    &kp P
 &kp A             &kp S         &kp D           &kp F               &kp G        &none                       &kp ESCAPE     &kp H        &kp J    &kp K        &kp L    &kp MINUS
 &kp Z             &kp X         &kp C           &kp V               &kp B        &kp DELETE                  &kp TAB        &kp N        &lt 5 M  &lt 2 COMMA  &kp DOT  &kp QUESTION
 &kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_SHIFT  &mt LEFT_ALT LANG2  &lt 1 SPACE  &lt_to_layer_0 3 LANG1      &kp BACKSPACE  &lt 2 ENTER                                 &kp RIGHT_SHIFT
             >;
-
-            sensor-bindings = <&inc_dec_kp DOWN_ARROW UP_ARROW>;
         };
 
         kigou {
